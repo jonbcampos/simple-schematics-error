@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "simple": {
+      "aliases": [
+        "sim"
+      ],
+      "description": "A blank schematic.",
+      "factory": "./simple/index#simple",
+      "schema": "./simple/schema.json"
+    }
+  }
+}

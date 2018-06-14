@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SimpleSchema",
+  "title": "Simple Test",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the interface.",
+      "visible": false
+    },
+    "overwrite": {
+      "type": "boolean",
+      "description": "Specifies if we should overwrite existing files.",
+      "default": false
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}
